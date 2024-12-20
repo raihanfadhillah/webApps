@@ -1,0 +1,316 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+.top{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    justify-content: left;
+}
+.searchbox{
+    background-color: #eee;
+    width:500px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+.inputsearch{
+    width: 470px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+}
+.iconsearch:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.store{
+    text-decoration: none;
+    color: black;
+}
+.store:hover{
+    text-decoration: underline;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+    justify-content: space-between;
+    padding-inline: 50px;
+    font-size: 16px;
+}
+.left-nav{
+    display: flex;
+    gap: 50px;
+}
+.right-nav{
+    display: flex;
+    gap: 50px;
+}
+.left-nav a{
+    text-decoration: none;
+    color: rgb(78, 77, 77);
+}
+.left-nav a:hover{
+    text-decoration: underline;
+}
+.right-nav a{
+    text-decoration: none;
+    color: rgb(78, 77, 77);
+}
+.mySlides{
+    display: none;
+}
+.mySlides img{
+    width: 100%;
+    height: 400px;
+    /* object fit ngatur skala gambar berdasarkanp pembungkus */
+    object-fit: cover;
+    /* object position buat ngatur posisi gambar yang ditampilkan */
+    object-position: top;
+    /* aspect ratio : ngatur rasio gambar */
+    aspect-ratio: 16/9;
+}
+.carousel{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .cardproduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .card-list .card-item{
+    list-style: none;
+  }
+  .card-list .card-item .card-link{    
+    user-select: none;
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+    color: black;
+  }
+  .card-list .card-link .card-img{
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  .card-list .card-link button{
+    background:none;
+    cursor: pointer;
+    border: none;
+    border-left: 2px solid black;
+  }
+  .pd-update{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .pd-update .card{
+    box-shadow: 0px 0px 4px 0px #d7d5d5;
+    width: 250px;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 5px;
+  }
+ .service{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .service .card{
+    box-shadow: 0px 0px 4px 0px #d7d5d5;
+    width: 250px;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .card .link-card{
+    text-decoration: none;
+    color: black;
+  }
+  .card .link-card .productName{
+    margin-bottom: -20px;
+  }
+  .card .link-card span{
+    font-size: 12px;
+  }
+  .card .link-card img{
+    object-fit: contain;
+    /* object position buat ngatur posisi gambar yang ditampilkan */
+    object-position: center;
+    /* aspect ratio : ngatur rasio gambar */
+    aspect-ratio: 16/9;
+    max-width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .card .link-card .badge{
+    color: orange;
+  }
+  .grid-new-product .badge{
+    color: orange;
+  }
+  .grid-new-product{
+    background-color: rgb(247 247 247);
+    padding: 10px;
+    display: flex;
+    height: 700px;
+  }
+  .grid-new-product .left{
+    box-shadow: 0px 0px 4px 0px #d7d5d5;
+    background-color: white;
+    width: 45%;
+    max-height: 90%;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .grid-new-product .right{
+    width: 45%;
+  }
+  .grid-new-product .right .card1{
+    display: flex;
+    box-shadow: 0px 0px 4px 0px #d7d5d5;
+    background-color: white;
+    width: 100%;
+    height: 42% ;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .left .image-newproduct{
+    object-fit: contain;
+    /* object position buat ngatur posisi gambar yang ditampilkan */
+    object-position: center;
+    /* aspect ratio : ngatur rasio gambar */
+
+    max-width: 60%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .grid-new-product .right .card1 .left-img{
+    width: 40%;
+  }
+ .grid-new-product .right .card1 .left-img img{
+    object-fit: contain;
+    /* object position buat ngatur posisi gambar yang ditampilkan */
+    object-position: center;
+    /* aspect ratio : ngatur rasio gambar */
+
+    width: 90%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .buynow{
+    width:200px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: rgb(13, 127, 197);
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 900;
+    font-size: 14px;
+  }
+  .buynow:hover{
+    background-color: rgb(2, 87, 141);
+    
+  }
+  .nav-footer{
+    display: flex;
+    margin: 50px;
+    padding: 10px;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .nav-footer div.title{
+    font-weight: 700;
+  }
+  .nav-footer ul{
+   padding-inline-start: 0  ;
+  }
+  .nav-footer ul li a{
+    text-decoration: none;
+    color: rgb(134, 133, 133);
+    display: block;
+    font-size: 14px;
+  }
+  .nav-footer ul li{
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+  .nav-footer ul li a img{
+    width: 100px;
+  }
+  .paymentfooter ul li{
+    font-size: 14px;
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  .paymentfooter{
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    justify-content: space-between;
+    
+  }
+  .paymentfooter .rightside .pay1 img{
+    width: 300px;
+  }
+  .paymentfooter .rightside .pay2 img{
+    width: 150px;
+  }
+
+  
